@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { ExternalLink, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
 
 interface ProjectCardProps {
   title: string
@@ -32,9 +33,11 @@ export default function ProjectCard({ title, description, image, tags, link }: P
             <Button variant="ghost" size="icon" className="text-white hover:text-cyan-400 hover:bg-gray-800/50">
               <Github className="h-5 w-5" />
             </Button>
+            <Link href={link}>
             <Button variant="ghost" size="icon" className="text-white hover:text-cyan-400 hover:bg-gray-800/50">
               <ExternalLink className="h-5 w-5" />
             </Button>
+            </Link>
           </div>
         </div>
       </div>

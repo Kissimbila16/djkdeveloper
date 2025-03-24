@@ -187,35 +187,35 @@ do mundo real.
                     description="Real-time dashboard for e-commerce businesses with inventory management and sales analytics."
                     image="/proj/quick.png"
                     tags={["Next.js", "TypeScript"]}
-                    link="https://example.com"
+                    link="https://quick-js.vercel.app/"
                   />
                   <ProjectCard
                     title="Modelo de machine learnig chamado dunamis.IA"
                     description="Live cryptocurrency tracking app with portfolio management and price alerts."
                     image="/proj/duna.png"
                     tags={["React", "Node.js", "WebSockets"]}
-                    link="https://example.com"
+                    link="https://dunamisia.vercel.app/"
                   />
                   <ProjectCard
                     title="Rede social para usuarios de Github chamdo gitChat"
                     description="A niche social platform for developers to share code snippets and collaborate."
                     image="/proj/git.png"
                     tags={["Node.js", "TypeScript", "Bootstrap"]}
-                    link="https://example.com"
+                    link="https://gitchat-via2-2.onrender.com/"
                   />
                   <ProjectCard
                     title="Plataforma de Arquitetura Nimana"
                     description="Collaborative task management tool with real-time updates and automation features."
                     image="/proj/nima.png"
                     tags={["Next.js","TypeScript", "Bootstrap", "WebSockets"]}
-                    link="https://example.com"
+                    link="https://nimana-arq.vercel.app/"
                   />
                   <ProjectCard
                     title="Site de apresentação da JFtech"
                     description="Interactive weather visualization app with 3D maps and historical data analysis."
                     image="/proj/jftech.png"
                     tags={["Next.js","TypeScript", "Bootstrap"]}
-                    link="https://example.com"
+                    link="https://jftech2-0.vercel.app/"
                   />
                 </div>
               </motion.div>
