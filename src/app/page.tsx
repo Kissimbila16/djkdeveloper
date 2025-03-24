@@ -1,8 +1,8 @@
 "use client"
-
+import Link from 'next/link';
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import { Code, Database, Github, Globe, Layers, Linkedin, Mail, Server, Twitter } from "lucide-react"
+import { Code, Database, Github, Globe, Layers, Linkedin, Mail, Server, Twitter,SendHorizontal } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeProvider } from "./components/theme-provider"
 import ProjectCard from "./components/project-card"
@@ -81,7 +81,7 @@ export default function Portfolio() {
                     <div className="aspect-square rounded-xl overflow-hidden border-2 border-cyan-500/30 relative">
                       <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-purple-600/20"></div>
                       <img
-                        src="/placeholder.svg?height=400&width=400"
+                        src="https://avatars.githubusercontent.com/u/95512079?v=4"
                         alt="Developer"
                         className="w-full h-full object-cover"
                       />
@@ -99,6 +99,7 @@ export default function Portfolio() {
                       problems.
                     </p>
                     <div className="flex space-x-4 pt-4">
+                    <Link href="https://github.com/Kissimbila16">
                       <Button
                         variant="ghost"
                         size="icon"
@@ -106,6 +107,8 @@ export default function Portfolio() {
                       >
                         <Github className="h-5 w-5" />
                       </Button>
+                      </Link>
+                      <Link href="https://www.linkedin.com/in/domingos-jo%C3%A3o-kissimbila-b4622a292">
                       <Button
                         variant="ghost"
                         size="icon"
@@ -113,13 +116,7 @@ export default function Portfolio() {
                       >
                         <Linkedin className="h-5 w-5" />
                       </Button>
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        className="rounded-full text-cyan-400 hover:text-cyan-300 hover:bg-cyan-950"
-                      >
-                        <Twitter className="h-5 w-5" />
-                      </Button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -142,18 +139,17 @@ export default function Portfolio() {
                 </h2>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                  <SkillBadge icon={<Code />} name="JavaScript" level={95} />
-                  <SkillBadge icon={<Code />} name="TypeScript" level={90} />
-                  <SkillBadge icon={<Code />} name="React" level={95} />
+                  <SkillBadge icon={<Code />} name="JavaScript" level={85} />
+                  <SkillBadge icon={<Code />} name="HTML" level={95} />
+                  <SkillBadge icon={<Code />} name="TypeScript" level={80} />
+                  <SkillBadge icon={<Code />} name="React" level={75} />
                   <SkillBadge icon={<Code />} name="Next.js" level={90} />
-                  <SkillBadge icon={<Server />} name="Node.js" level={85} />
-                  <SkillBadge icon={<Database />} name="MongoDB" level={80} />
-                  <SkillBadge icon={<Database />} name="PostgreSQL" level={75} />
-                  <SkillBadge icon={<Layers />} name="GraphQL" level={85} />
-                  <SkillBadge icon={<Code />} name="Tailwind CSS" level={90} />
-                  <SkillBadge icon={<Globe />} name="AWS" level={70} />
+                  <SkillBadge icon={<Server />} name="Node.js" level={95} />
+                  <SkillBadge icon={<Database />} name="MongoDB" level={70} />
+                  <SkillBadge icon={<Code />} name="Bootstrap 5" level={98} />
+                  <SkillBadge icon={<Code />} name="PHP" level={80} />
+                  <SkillBadge icon={<Code />} name="LARAVEL" level={80} />
                   <SkillBadge icon={<Server />} name="Docker" level={75} />
-                  <SkillBadge icon={<Code />} name="Redux" level={85} />
                 </div>
               </motion.div>
             </div>
@@ -176,43 +172,43 @@ export default function Portfolio() {
                   <ProjectCard
                     title="AI Content Platform"
                     description="A platform for generating and managing AI-powered content with advanced analytics."
-                    image="/placeholder.svg?height=300&width=500"
-                    tags={["React", "Node.js", "MongoDB", "OpenAI"]}
+                    image="/proj/biv.png"
+                    tags={["React", "Node.js", "OpenAI"]}
                     link="https://example.com"
                   />
                   <ProjectCard
                     title="E-commerce Dashboard"
                     description="Real-time dashboard for e-commerce businesses with inventory management and sales analytics."
-                    image="/placeholder.svg?height=300&width=500"
-                    tags={["Next.js", "TypeScript", "PostgreSQL", "Redis"]}
+                    image="/proj/quick.png"
+                    tags={["Next.js", "TypeScript"]}
                     link="https://example.com"
                   />
                   <ProjectCard
                     title="Crypto Tracker"
                     description="Live cryptocurrency tracking app with portfolio management and price alerts."
-                    image="/placeholder.svg?height=300&width=500"
-                    tags={["React", "GraphQL", "Node.js", "WebSockets"]}
+                    image="/proj/duna.png"
+                    tags={["React", "Node.js", "WebSockets"]}
                     link="https://example.com"
                   />
                   <ProjectCard
                     title="Social Media Platform"
                     description="A niche social platform for developers to share code snippets and collaborate."
-                    image="/placeholder.svg?height=300&width=500"
-                    tags={["React", "Firebase", "TypeScript", "Tailwind"]}
+                    image="/proj/git.png"
+                    tags={["Node.js", "TypeScript", "Bootstrap"]}
                     link="https://example.com"
                   />
                   <ProjectCard
                     title="Task Management App"
                     description="Collaborative task management tool with real-time updates and automation features."
-                    image="/placeholder.svg?height=300&width=500"
-                    tags={["Next.js", "MongoDB", "Socket.io", "Redux"]}
+                    image="/proj/nima.png"
+                    tags={["Next.js","TypeScript", "Bootstrap", "WebSockets"]}
                     link="https://example.com"
                   />
                   <ProjectCard
                     title="Weather Visualization"
                     description="Interactive weather visualization app with 3D maps and historical data analysis."
-                    image="/placeholder.svg?height=300&width=500"
-                    tags={["React", "Three.js", "D3.js", "Weather API"]}
+                    image="/proj/jftech.png"
+                    tags={["Next.js","TypeScript", "Bootstrap"]}
                     link="https://example.com"
                   />
                 </div>
@@ -232,7 +228,7 @@ export default function Portfolio() {
                 className="max-w-3xl mx-auto"
               >
                 <h2 className="text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">
-                  Get In Touch
+                  Message me
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-10">
@@ -241,17 +237,18 @@ export default function Portfolio() {
                     <div className="space-y-4">
                       <div className="flex items-center space-x-3">
                         <Mail className="text-cyan-500 h-5 w-5" />
-                        <span className="text-gray-300">developer@example.com</span>
+                        <span className="text-gray-300">doncajoblack@gmail.com</span>
                       </div>
                       <div className="flex items-center space-x-3">
                         <Globe className="text-cyan-500 h-5 w-5" />
-                        <span className="text-gray-300">San Francisco, CA</span>
+                        <span className="text-gray-300">Angola/luanda</span>
                       </div>
                     </div>
 
                     <div className="pt-4">
                       <h3 className="text-xl font-semibold text-cyan-400 mb-4">Follow Me</h3>
                       <div className="flex space-x-4">
+                      <Link href="https://github.com/Kissimbila16">
                         <Button
                           variant="outline"
                           size="icon"
@@ -259,6 +256,8 @@ export default function Portfolio() {
                         >
                           <Github className="h-5 w-5" />
                         </Button>
+                        </Link>
+                        <Link href="https://ao.linkedin.com/in/domingos-jo%C3%A3o-kissimbila-b4622a292">
                         <Button
                           variant="outline"
                           size="icon"
@@ -266,13 +265,16 @@ export default function Portfolio() {
                         >
                           <Linkedin className="h-5 w-5" />
                         </Button>
+                        </Link>
+                        <Link href="mailto:doncajoblack@gmail.com?subject=Hello&body=Hello i want work win">
                         <Button
                           variant="outline"
                           size="icon"
                           className="rounded-full border-cyan-500 text-cyan-400 hover:bg-cyan-950"
                         >
-                          <Twitter className="h-5 w-5" />
+                          <SendHorizontal className="h-5 w-5" />
                         </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>

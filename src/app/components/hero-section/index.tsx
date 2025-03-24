@@ -133,9 +133,10 @@ export default function HeroSection() {
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">
-                Full Stack Developer
+               Domingos João kissimbila
               </span>
             </h1>
+            
           </motion.div>
 
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.6 }}>
