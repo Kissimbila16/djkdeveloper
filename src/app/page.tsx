@@ -39,20 +39,26 @@ export default function Portfolio() {
               transition={{ duration: 1 }}
               className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600"
             >
-              DEV.Djk
+              Dev kissimbila
             </motion.div>
             <div className="hidden md:flex space-x-8">
-              {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
-                <motion.a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-sm hover:text-cyan-400 transition-colors"
-                  whileHover={{ y: -2 }}
-                >
-                  {item}
-                </motion.a>
-              ))}
-            </div>
+  {[
+    { id: "home", name: "Home" },
+    { id: "about", name: "Sobre me" },
+    { id: "skills", name: "Hbailidades" },
+    { id: "projects", name: "Projetos" },
+    { id: "contact", name: "Contatos" }
+  ].map((item) => (
+    <motion.a
+      key={item.id}
+      href={`#${item.id}`}
+      className="text-sm hover:text-cyan-400 transition-colors"
+      whileHover={{ y: -2 }}
+    >
+      {item.name}
+    </motion.a>
+  ))}
+</div>
             <Button variant="outline" className="border-cyan-500 text-cyan-400 hover:bg-cyan-950">
               Resume
             </Button>
@@ -290,7 +296,7 @@ do mundo real.
         <footer className="py-8 border-t border-cyan-900/30 backdrop-blur-md bg-black/30">
           <div className="container mx-auto px-6 text-center">
             <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Domingos J.Kissimbila. Todos os direitos reservados.</p>
-            <p className="text-gray-600 text-xs mt-2">Construído com Next.js e Tailwind CSS</p>
+            <p className="text-gray-600 text-xs mt-2">Domingos J.Kissimbila.</p>
           </div>
         </footer>
       </div>
