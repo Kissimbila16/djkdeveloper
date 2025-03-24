@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
@@ -28,15 +29,6 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Construct the mailto link
-    const { name, email, message } = formState
-    const subject = encodeURIComponent(`Contact from ${name}`)
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`)
-    const mailtoLink = `mailto:doncajo@gmail.com?subject=${subject}&body=${body}`
-
-    // Open the mailto link
-    window.location.href = mailtoLink
 
     // Simulate form submission
     setTimeout(() => {
@@ -121,3 +113,4 @@ export default function ContactForm() {
     </motion.form>
   )
 }
+

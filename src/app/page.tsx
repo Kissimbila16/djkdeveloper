@@ -74,7 +74,7 @@ export default function Portfolio() {
                 className="max-w-3xl mx-auto"
               >
                 <h2 className="text-3xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">
-                  About Me
+                Sobre mim
                 </h2>
                 <div className="grid md:grid-cols-2 gap-10 items-center">
                   <div className="relative">
@@ -89,15 +89,15 @@ export default function Portfolio() {
                     <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-full opacity-50 blur-xl"></div>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-gray-300">
-                      I'm a passionate Full Stack JavaScript Developer with 5+ years of experience building modern web
-                      applications. I specialize in creating seamless user experiences with cutting-edge technologies.
-                    </p>
-                    <p className="text-gray-300">
-                      My journey in tech started when I built my first website at 15. Since then, I've worked with
-                      startups and established companies to deliver scalable, efficient solutions that solve real-world
-                      problems.
-                    </p>
+                  <p className="text-gray-300">
+Sou um apaixonado desenvolvedor Full Stack JavaScript com mais de 5 anos de experiência na criação de aplicativos web
+modernos. Sou especialista em criar experiências de usuário perfeitas com tecnologias de ponta.
+</p>
+<p className="text-gray-300">
+Minha jornada na tecnologia começou quando criei meu primeiro site aos 15 anos. Desde então, trabalhei com
+startups e empresas estabelecidas para fornecer soluções escaláveis ​​e eficientes que resolvem problemas
+do mundo real.
+</p>
                     <div className="flex space-x-4 pt-4">
                     <Link href="https://github.com/Kissimbila16">
                       <Button
@@ -135,7 +135,7 @@ export default function Portfolio() {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">
-                  Tech Stack
+               Habilidades
                 </h2>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -165,47 +165,47 @@ export default function Portfolio() {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">
-                  Featured Projects
+       Projectos
                 </h2>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   <ProjectCard
-                    title="AI Content Platform"
+                    title="API de verifição de bilhete de identidade"
                     description="A platform for generating and managing AI-powered content with advanced analytics."
                     image="/proj/biv.png"
                     tags={["React", "Node.js", "OpenAI"]}
-                    link="https://example.com"
+                    link="https://api-biv.vercel.app/"
                   />
                   <ProjectCard
-                    title="E-commerce Dashboard"
+                    title="Minha framework Quick.js"
                     description="Real-time dashboard for e-commerce businesses with inventory management and sales analytics."
                     image="/proj/quick.png"
                     tags={["Next.js", "TypeScript"]}
                     link="https://example.com"
                   />
                   <ProjectCard
-                    title="Crypto Tracker"
+                    title="Modelo de machine learnig chamado dunamis.IA"
                     description="Live cryptocurrency tracking app with portfolio management and price alerts."
                     image="/proj/duna.png"
                     tags={["React", "Node.js", "WebSockets"]}
                     link="https://example.com"
                   />
                   <ProjectCard
-                    title="Social Media Platform"
+                    title="Rede social para usuarios de Github chamdo gitChat"
                     description="A niche social platform for developers to share code snippets and collaborate."
                     image="/proj/git.png"
                     tags={["Node.js", "TypeScript", "Bootstrap"]}
                     link="https://example.com"
                   />
                   <ProjectCard
-                    title="Task Management App"
+                    title="Plataforma de Arquitetura Nimana"
                     description="Collaborative task management tool with real-time updates and automation features."
                     image="/proj/nima.png"
                     tags={["Next.js","TypeScript", "Bootstrap", "WebSockets"]}
                     link="https://example.com"
                   />
                   <ProjectCard
-                    title="Weather Visualization"
+                    title="Site de apresentação da JFtech"
                     description="Interactive weather visualization app with 3D maps and historical data analysis."
                     image="/proj/jftech.png"
                     tags={["Next.js","TypeScript", "Bootstrap"]}
@@ -228,12 +228,12 @@ export default function Portfolio() {
                 className="max-w-3xl mx-auto"
               >
                 <h2 className="text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">
-                  Message me
+                Envie-me uma mensagem
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-10">
                   <div className="space-y-6">
-                    <h3 className="text-xl font-semibold text-cyan-400">Contact Information</h3>
+                    <h3 className="text-xl font-semibold text-cyan-400">Informações de contato</h3>
                     <div className="space-y-4">
                       <div className="flex items-center space-x-3">
                         <Mail className="text-cyan-500 h-5 w-5" />
@@ -246,7 +246,7 @@ export default function Portfolio() {
                     </div>
 
                     <div className="pt-4">
-                      <h3 className="text-xl font-semibold text-cyan-400 mb-4">Follow Me</h3>
+                      <h3 className="text-xl font-semibold text-cyan-400 mb-4">Seguir me</h3>
                       <div className="flex space-x-4">
                       <Link href="https://github.com/Kissimbila16">
                         <Button
@@ -289,8 +289,8 @@ export default function Portfolio() {
         {/* Footer */}
         <footer className="py-8 border-t border-cyan-900/30 backdrop-blur-md bg-black/30">
           <div className="container mx-auto px-6 text-center">
-            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} DEV.FUTURE. All rights reserved.</p>
-            <p className="text-gray-600 text-xs mt-2">Built with Next.js and Tailwind CSS</p>
+            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Domingos J.Kissimbila. Todos os direitos reservados.</p>
+            <p className="text-gray-600 text-xs mt-2">Construído com Next.js e Tailwind CSS</p>
           </div>
         </footer>
       </div>

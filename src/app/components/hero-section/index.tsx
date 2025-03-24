@@ -3,7 +3,8 @@
 import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown, SendHorizontal } from "lucide-react"
+import Link from "next/link"
 
 export default function HeroSection() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -140,7 +141,7 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.6 }}>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8">Building the future of the web with JavaScript</p>
+            <p className="text-xl md:text-2xl text-gray-300 mb-8">Construindo o futuro da web com JavaScriptt</p>
           </motion.div>
 
           <motion.div
@@ -149,12 +150,18 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 1 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
+                        <Link href="#projects">
+
             <Button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-0">
-              View My Work
-            </Button>
+              Ver meus projetos
+              </Button>
+              </Link>
+
+              <Link href="mailto:doncajoblack@gmail.com?subject=Hello&body=Hello i want work win">
             <Button variant="outline" className="border-cyan-500 text-cyan-400 hover:bg-cyan-950">
-              Contact Me
+            <SendHorizontal className="h-5 w-5" />  Falar comigo
             </Button>
+            </Link>
           </motion.div>
         </div>
       </div>
