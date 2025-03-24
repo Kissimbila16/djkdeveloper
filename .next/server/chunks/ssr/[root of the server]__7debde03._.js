@@ -1587,7 +1587,7 @@ function Portfolio() {
                                                         "Next.js",
                                                         "TypeScript"
                                                     ],
-                                                    link: "https://example.com"
+                                                    link: "https://quick-js.vercel.app/"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
                                                     lineNumber: 185,
@@ -1602,7 +1602,7 @@ function Portfolio() {
                                                         "Node.js",
                                                         "WebSockets"
                                                     ],
-                                                    link: "https://example.com"
+                                                    link: "https://dunamisia.vercel.app/"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
                                                     lineNumber: 192,
@@ -1617,7 +1617,7 @@ function Portfolio() {
                                                         "TypeScript",
                                                         "Bootstrap"
                                                     ],
-                                                    link: "https://example.com"
+                                                    link: "https://gitchat-via2-2.onrender.com/"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
                                                     lineNumber: 199,
@@ -1633,7 +1633,7 @@ function Portfolio() {
                                                         "Bootstrap",
                                                         "WebSockets"
                                                     ],
-                                                    link: "https://example.com"
+                                                    link: "https://nimana-arq.vercel.app/"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
                                                     lineNumber: 206,
@@ -1648,7 +1648,7 @@ function Portfolio() {
                                                         "TypeScript",
                                                         "Bootstrap"
                                                     ],
-                                                    link: "https://example.com"
+                                                    link: "https://jftech2-0.vercel.app/"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
                                                     lineNumber: 213,
