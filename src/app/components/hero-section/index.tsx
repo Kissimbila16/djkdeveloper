@@ -8,9 +8,10 @@ import Link from "next/link"
 
 export default function HeroSection() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-
+  
   useEffect(() => {
-    const canvas = canvasRef.current
+    const canvas = document.getElementById('myCanvas') as HTMLCanvasElement;
+
     if (!canvas) return
 
     const ctx = canvas.getContext("2d")
