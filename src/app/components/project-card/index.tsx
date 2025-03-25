@@ -23,7 +23,7 @@ export default function ProjectCard({ title, description, image, tags, link }: P
       <div className="relative overflow-hidden">
         <div className="aspect-video overflow-hidden">
           <img
-            src={image || "/placeholder.svg"}
+            src={image}
             alt={title}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />

@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import { Code, Database, Github, Globe, Layers, Linkedin, Mail, Server, Twitter,SendHorizontal } from "lucide-react"
+import { Code, Database, Github, Globe, Linkedin, Mail, Server,SendHorizontal } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeProvider } from "./components/theme-provider"
 import ProjectCard from "./components/project-card"
