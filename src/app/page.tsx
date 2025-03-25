@@ -45,7 +45,7 @@ export default function Portfolio() {
   {[
     { id: "home", name: "Home" },
     { id: "about", name: "Sobre me" },
-    { id: "skills", name: "Hbailidades" },
+    { id: "skills", name: "Habilidades" },
     { id: "projects", name: "Projetos" },
     { id: "contact", name: "Contatos" }
   ].map((item) => (
