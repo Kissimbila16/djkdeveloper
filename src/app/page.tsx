@@ -20,7 +20,6 @@ export default function Portfolio() {
   if (!mounted) return null
 
   return (
-    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       <div className="min-h-screen bg-black text-white overflow-hidden">
         {/* Custom cursor */}
         <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-50">
@@ -302,7 +301,6 @@ do mundo real.
           </div>
         </footer>
       </div>
-    </ThemeProvider>
   )
 }
 
