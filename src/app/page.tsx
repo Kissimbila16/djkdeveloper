@@ -148,6 +148,8 @@ do mundo real.
                   <SkillBadge icon={<Code />} name="JavaScript" level={85} />
                   <SkillBadge icon={<Code />} name="HTML" level={95} />
                   <SkillBadge icon={<Code />} name="TypeScript" level={80} />
+                  <SkillBadge icon={<Code />} name="React Native" level={75} />
+                  <SkillBadge icon={<Code />} name="Flutter" level={75} />
                   <SkillBadge icon={<Code />} name="React" level={75} />
                   <SkillBadge icon={<Code />} name="Next.js" level={90} />
                   <SkillBadge icon={<Server />} name="Node.js" level={95} />
