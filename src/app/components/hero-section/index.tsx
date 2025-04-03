@@ -7,12 +7,11 @@ import { ChevronDown, SendHorizontal } from "lucide-react"
 import Link from "next/link"
 
 export default function HeroSection() {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-  
-  useEffect(() => {
-    const canvas = document.getElementById('myCanvas') as HTMLCanvasElement;
+  const canvasRef = useRef<HTMLCanvasElement | any>('')
 
-    if (!canvas) return
+  useEffect(() => {
+    var canvas!:HTMLCanvasElement;
+  canvas =  canvasRef?.current
 
     const ctx = canvas.getContext("2d")
     if (!ctx) return
@@ -32,12 +31,18 @@ export default function HeroSection() {
       color: string
 
       constructor() {
+      if(canvas){
         this.x = Math.random() * canvas.width
         this.y = Math.random() * canvas.height
+      }else{
+        this.x = Math.random() * 2
+        this.y = Math.random() * 2
+      }
         this.size = Math.random() * 3 + 1
         this.speedX = Math.random() * 1 - 0.5
         this.speedY = Math.random() * 1 - 0.5
         this.color = `rgba(${Math.floor(Math.random() * 100 + 155)}, ${Math.floor(Math.random() * 100 + 155)}, 255, ${Math.random() * 0.5 + 0.1})`
+        
       }
 
       update() {
