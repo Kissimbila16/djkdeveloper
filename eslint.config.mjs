@@ -11,6 +11,14 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "no-alert": "off", // Desativa a regra no-alert
+      "no-console": "off", // Desativa a regra no-console
+      "@typescript-eslint/no-explicit-any": "off", // Desativa a regra no-explicit-any
+      // Adicione outras regras que você deseja desativar aqui
+    },
+  },
 ];
 
 export default eslintConfig;
